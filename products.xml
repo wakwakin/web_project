@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <category>
+    <categoryName>Shoes</categoryName>
+    <categoryName>walapa</categoryName>
+    <categoryName>walapa</categoryName>
+  </category>
+  <product>
+    <productName>Adidas Unisex VS Set Mule FX4849 White</productName>
+    <productImage>images/shoes/adidas-1</productImage>
+    <productPrice>299$</productPrice>
+    <productDescription>Test</productDescription>
+    <productQuantity>0</productQuantity>
+  </product>
+  <product>
+    <productName>Adidas Response CI</productName>
+    <productImage>images/shoes/adidas-2</productImage>
+    <productPrice>299$</productPrice>
+    <productDescription>Test</productDescription>
+    <productQuantity>0</productQuantity>
+  </product>
+  <product>
+    <productName>Converse Chuck Taylor All Star Tangerine</productName>
+    <productImage>images/shoes/converse-1</productImage>
+    <productPrice>299$</productPrice>
+    <productDescription>Test</productDescription>
+    <productQuantity>0</productQuantity>
+  </product>
+  <product>
+    <productName>Converse All Star Red</productName>
+    <productImage>images/shoes/converse-2</productImage>
+    <productPrice>299$</productPrice>
+    <productDescription>Test</productDescription>
+    <productQuantity>0</productQuantity>
+  </product>
+  <product>
+    <productName>Nike Zoom</productName>
+    <productImage>images/shoes/nike</productImage>
+    <productPrice>299$</productPrice>
+    <productDescription>Test</productDescription>
+    <productQuantity>0</productQuantity>
+  </product>
+  <product>
+    <productName>Vans Edvard Munch</productName>
+    <productImage>images/shoes/vans</productImage>
+    <productPrice>299$</productPrice>
+    <productDescription>Test</productDescription>
+    <productQuantity>0</productQuantity>
+  </product>
+</products>

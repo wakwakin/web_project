@@ -1,0 +1,279 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+body
+{
+  height: 100vh;
+  background-color: #e06377;
+  overflow-x: hidden;
+}
+#navigation
+{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+.nav
+{
+  text-align: center;
+  flex-basis: 100%;
+  font-size: 4vh;
+  padding: 1.5vh;
+  border-bottom-style: solid;
+  border-bottom-color: #f9d5e5;
+  border-bottom-width: 0.2vh;
+  background-color: #e06377;
+}
+.nav i
+{
+  width: 100%;
+  padding: 2.5vh 0;
+  border-radius: 1.5vh;
+  color: #f9d5e5;
+}
+.nav i:hover
+{
+  background-color: #e67f90;
+}
+#categories
+{
+  display: flex;
+}
+#categories span, #categories input
+{
+  width: 95%;
+  float: left;
+  text-align: center;
+  padding: 2.5vh;
+  margin: 2.5vh 2.5vh 0 2.5vh;
+  font-size: 2.5vh;
+  flex-basis: 100%;
+  color: #f9d5e5;
+  border-radius: 1.5vh;
+}
+#categories span:hover
+{
+  cursor: pointer;
+  border-left-color: #c83349;
+  border-bottom-color: #c83349;
+  background-image: linear-gradient(45deg, #c83349, #e06377);
+}
+#categories input
+{
+  outline: none;
+  border: none;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0);
+}
+#categories input:focus
+{
+  border-bottom-style: solid;
+  border-bottom-width: 0.1vh;
+  border-radius: 0;
+  padding: 2.5vh 2.5vh 2.4vh 2.5vh;
+}
+#categories input::placeholder
+{
+  color: #f9d5e5;
+}
+#user
+{
+  width: 100%;
+  display: none;
+  justify-content: center;
+}
+#user div
+{
+  width: 50vh;
+  margin-top: 2.5vh;
+  text-align: center;
+}
+#user div input, #user div button
+{
+  font-size: 2vh;
+  padding: 1.5vh;
+  margin: 1.5vh 0.5vh;
+  margin-bottom: 2.5vh;
+  width: 45vh;
+  outline: none;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #f9d5e5;
+  border-bottom-width: 0.1vh;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f9d5e5;
+}
+#user div input:focus, #user div button:focus
+{
+  border-bottom-color: #c83349;
+}
+#user div input::placeholder, #user div button::placeholder
+{
+  color: #f9d5e5;
+}
+#loginButton:disabled, #registerButton:disabled
+{
+  border-color: #000;
+  background-image: linear-gradient(45deg, #000, #e06377);
+}
+#user div button
+{
+  border-left-style: solid;
+  border-left-color: #f9d5e5;
+  border-left-width: 0.1vh;
+  width: 23.25vh;
+}
+#user div button:enabled:hover
+{
+  border-left-color: #c83349;
+  border-bottom-color: #c83349;
+  background-image: linear-gradient(45deg, #c83349, #e06377);
+}
+#user div button:focus
+{
+  border-left-color: #c83349;
+}
+#usernameValid
+{
+  margin: -1vh 0 0 2vh;
+  position: absolute;
+  font-size: 1.5vh;
+}
+#usernameValid i
+{
+  color: #c83349;
+  margin: 0 1.5vh;
+}
+.hidden
+{
+  display: none;
+}
+.used
+{
+  display: block;
+}
+#store
+{
+  width: 100%;
+}
+.row
+{
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.product
+{
+  flex-basis: 20vh;
+  height: 20vh;
+  margin: 2.5vh 1.25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #c83349;
+  border-width: 0.1vh;
+  overflow: hidden;
+}
+.product img
+{
+  width: 20vh;
+  height: 20vh;
+  transition: width 0.5s, height 0.5s;
+}
+.product img:hover
+{
+  width: 22.5vh;
+  height: 22.5vh;
+  background-image: linear-gradient(45deg, #c83349, #e06377);
+}
+.product span
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.1vh;
+  border-color: #c83349;
+  margin-top: 27.5vh;
+  text-align: center;
+  width: 20vh;
+  position: absolute;
+  background-color: rgba(25, 25, 25, 0.5);
+  text-transdiv: uppercase;
+  font-weight: bold;
+  font-size: 1.5vh;
+  min-height: 7.5vh;
+  color: #f9d5e5;
+}
+.product img:hover ~ #price
+{
+  display: flex;
+}
+#price
+{
+  background-color: rgba(25, 25, 25, 1);
+  display: none;
+}
+#quantity
+{
+  position:absolute;
+  width: 20vh;
+  margin-top: -17vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: solid;
+  border-width: 0.1vh;
+  border-color: #c83349;
+  display: flex;
+  justify-content: center;
+}
+#quantity input, #quantity button, #userQuantity input, #userQuantity button, .order input
+{
+  border-style: none;
+  border-radius: 1.5vh;
+  width: 4.5vh;
+  padding: 0.5vh;
+  font-size: 1.5vh;
+  outline: none;
+  color: #f9d5e5;
+  background-color: rgba(0, 0, 0, 0);
+}
+#quantity input:hover, button:hover, #userQuantity input:hover, #userQuantity button:hover, .order input:hover
+{
+  background-image: linear-gradient(45deg, #c83349, #e06377);
+}
+#userInteract
+{
+  width: 100%;
+  display: none;
+}
+.order
+{
+  border-style: solid;
+  border-width: 0.1vh;
+  border-color: #f9d5e5;
+  padding: 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1.5vh;
+}
+.order *
+{
+  padding: 1.5vh;
+}
+.order img
+{
+  width: 10vh;
+}
+.order span
+{
+  font-size: 2vh;
+  color: #f9d5e5;
+}
